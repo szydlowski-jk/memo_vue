@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Memo</title>
+</head>
+<body>
+    <div id="app">
+        <div class="menu">
+            Width: <input id="width" type="text" value="5" v-model="boardWidth">
+            Height: <input id="height" type="text" value="4" v-model="boardHeight">
+            <button @click="startGame">Start</button>
+            <hr>
+        </div>
+        <div class="results">
+            <p>Time: {{time}}</p>
+        </div>
+        <div class="field">
+            <card v-for="c in memo.field"></card>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</body>
+</html>
+<script src="app.js"></script>

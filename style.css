@@ -1,0 +1,12 @@
+.field {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto
+    /* grid-auto-flow: column; */
+}
+
+.card {
+    background-color: lime;
+    /* width: 200px; */
+    
+    margin: 10px;
+}
