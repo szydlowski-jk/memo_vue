@@ -1,12 +1,22 @@
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+
 .field {
-    display: grid;
-    grid-template-columns: auto auto auto auto auto
-    /* grid-auto-flow: column; */
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: repeat(auto-fill, min-max(200px, 1fr))
 }
 
 .card {
     background-color: lime;
+    width: auto;
+    flex-grow: 1;
+    /* height: 100px; */
     /* width: 200px; */
-    
+
     margin: 10px;
 }

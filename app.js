@@ -21,7 +21,14 @@ class Memo {
 }
 
 Vue.component('card', {
-    template: '<div class="card">Card Rect</div>'
+    template: '<div class="card" @click="select">Card Rect</div>',
+
+    methods: {
+        select() {
+            console.log(this)
+        }
+    }
+
 })
 
 const app = new Vue({
