@@ -20,7 +20,7 @@
         </div>
         <div class="field">
             <div class="row" v-for="r in memo.h">
-                <card v-for="c in memo.w"></card>
+                <card v-for="c in memo.w" :x="c" :y="r"></card>
             </div>
        </div>
     </div>

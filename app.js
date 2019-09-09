@@ -21,11 +21,11 @@ class Memo {
 }
 
 Vue.component('card', {
-    template: '<div class="card" @click="select">Card Rect</div>',
-
+    template: '<div class="card" @click="select">{{x}},{{y}}</div>',
+    props: ['x', 'y'],
     methods: {
         select() {
-            console.log(this)
+            console.log(this.x, this.y)
         }
     }
 
